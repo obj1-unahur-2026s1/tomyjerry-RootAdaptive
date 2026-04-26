@@ -6,9 +6,18 @@ object tom {
         return  5 + energia/10
     }
 
+    method puede_cazar_raton_a(distancia){
+        return energia >= distancia/2
+    }
+
     method comer_raton(raton){
         energia = energia + (12 + raton.peso())
         raton_comido = raton
+    }
+
+    method comer_raton_a(raton, distancia){
+        self.correr(distancia)
+        self.comer_raton(raton)
     }
 
     method correr(metros){
