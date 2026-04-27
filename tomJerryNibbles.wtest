@@ -43,3 +43,4 @@ describe "Grupo de test" {
     assert.equals(24,tom.velocidad_maxima())
   }
 }
+
